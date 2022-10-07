@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Achievemore</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap">
     <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark-icons.css">
 </head>
 
 <body class="page-top">
     <header>
         <nav class="navbar navbar-light navbar-expand-md bg-dark">
-            <div class="container-fluid"><a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/achievemore_logo_login.png" loading="lazy" width="150px"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="assets/img/achievemore_logo_login.png" loading="lazy" width="150px"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active link-light" href="index.html">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link link-primary active" href="modelo.html">Modelo</a></li>
+                        <li class="nav-item"><a class="nav-link link-light active" href="modelo.html">Modelo</a></li>
+                        <li class="nav-item"><a class="nav-link link-light" href="perfomance.html">Perfomance</a></li>
                         <li class="nav-item"><a class="nav-link link-light" href="#">Premiação</a></li>
                         <li class="nav-item"><a class="nav-link link-light" href="#">Extratos</a></li>
                     </ul>
@@ -26,7 +26,7 @@
         </nav>
     </header>
     <div class="container mt-3" id="main-page">
-        <h2>Dashboard</h2>
+        <h2>Meus Modelos</h2>
         <section id="filtros" class="mb-3">
             <div class="card shadow-sm">
                 <div class="card-body mb-md-3">
@@ -59,13 +59,13 @@
     </div>
     <div class="container">
         <div>
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Modelo Plus Individual</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Modelo Equipe</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-3">Modelo Acompanhamento Mensal</a></li>
+            <ul class="nav nav-tabs nav-fill" role="tablist">
+                <li class="nav-item text-truncate" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Modelo Plus Individual</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link text-truncate" role="tab" data-bs-toggle="tab" href="#tab-2">Modelo Equipe</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active text-truncate" role="tab" data-bs-toggle="tab" href="#tab-3">Modelo Acompanhamento Mensal</a></li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <div class="tab-pane" role="tabpanel" id="tab-1">
                     <div class="card">
                         <div class="card-body">
                             <div class="container py-4 py-xl-5">
@@ -75,64 +75,98 @@
                                         <p class="w-lg-50">25% do Salário Fixo<br></p>
                                     </div>
                                 </div>
-                                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                                <div class="row">
                                     <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Salty Receita NF</h5>
+                                        <div class="accordion" role="tablist" id="kpi-1">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-1 .item-1" aria-expanded="false" aria-controls="kpi-1 .item-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"></path>
+                                                        </svg>Salty Kpi - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#kpi-1">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Brinquedos</h5>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-1 .item-2" aria-expanded="false" aria-controls="kpi-1 .item-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M352 176C369.7 176 384 190.3 384 208C384 225.7 369.7 240 352 240H320V448H368C421 448 464 405 464 352V345.9L456.1 352.1C447.6 362.3 432.4 362.3 423 352.1C413.7 343.6 413.7 328.4 423 319L479 263C488.4 253.7 503.6 253.7 512.1 263L568.1 319C578.3 328.4 578.3 343.6 568.1 352.1C559.6 362.3 544.4 362.3 535 352.1L528 345.9V352C528 440.4 456.4 512 368 512H208C119.6 512 48 440.4 48 352V345.9L40.97 352.1C31.6 362.3 16.4 362.3 7.029 352.1C-2.343 343.6-2.343 328.4 7.029 319L63.03 263C72.4 253.7 87.6 253.7 96.97 263L152.1 319C162.3 328.4 162.3 343.6 152.1 352.1C143.6 362.3 128.4 362.3 119 352.1L112 345.9V352C112 405 154.1 448 208 448H256V240H224C206.3 240 192 225.7 192 208C192 190.3 206.3 176 224 176H234.9C209 158.8 192 129.4 192 96C192 42.98 234.1 0 288 0C341 0 384 42.98 384 96C384 129.4 366.1 158.8 341.1 176H352zM288 128C305.7 128 320 113.7 320 96C320 78.33 305.7 64 288 64C270.3 64 256 78.33 256 96C256 113.7 270.3 128 288 128z"></path>
+                                                        </svg>Frangos Fritos - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#kpi-1">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Produtividade</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Chocolates</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Foods</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-flex p-3">
-                                            <div class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon sm"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                                </svg></div>
-                                            <div class="px-2">
-                                                <h5 class="mb-0 mt-1">Celulares</h5>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-1 .item-3" aria-expanded="false" aria-controls="kpi-1 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"></path>
+                                                        </svg>Maçãs - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#kpi-1">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -142,10 +176,318 @@
                     </div>
                 </div>
                 <div class="tab-pane" role="tabpanel" id="tab-2">
-                    <p>Content for tab 2.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container py-4 py-xl-5">
+                                <div class="row mb-5">
+                                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                                        <h2>Modelo Equipe</h2>
+                                        <p class="w-lg-50">25% do Salário Fixo<br></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="accordion" role="tablist" id="kpi-2">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-2 .item-1" aria-expanded="false" aria-controls="kpi-2 .item-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"></path>
+                                                        </svg>Salty Kpi - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#kpi-2">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-2 .item-2" aria-expanded="false" aria-controls="kpi-2 .item-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M352 176C369.7 176 384 190.3 384 208C384 225.7 369.7 240 352 240H320V448H368C421 448 464 405 464 352V345.9L456.1 352.1C447.6 362.3 432.4 362.3 423 352.1C413.7 343.6 413.7 328.4 423 319L479 263C488.4 253.7 503.6 253.7 512.1 263L568.1 319C578.3 328.4 578.3 343.6 568.1 352.1C559.6 362.3 544.4 362.3 535 352.1L528 345.9V352C528 440.4 456.4 512 368 512H208C119.6 512 48 440.4 48 352V345.9L40.97 352.1C31.6 362.3 16.4 362.3 7.029 352.1C-2.343 343.6-2.343 328.4 7.029 319L63.03 263C72.4 253.7 87.6 253.7 96.97 263L152.1 319C162.3 328.4 162.3 343.6 152.1 352.1C143.6 362.3 128.4 362.3 119 352.1L112 345.9V352C112 405 154.1 448 208 448H256V240H224C206.3 240 192 225.7 192 208C192 190.3 206.3 176 224 176H234.9C209 158.8 192 129.4 192 96C192 42.98 234.1 0 288 0C341 0 384 42.98 384 96C384 129.4 366.1 158.8 341.1 176H352zM288 128C305.7 128 320 113.7 320 96C320 78.33 305.7 64 288 64C270.3 64 256 78.33 256 96C256 113.7 270.3 128 288 128z"></path>
+                                                        </svg>Frangos Fritos - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#kpi-2">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-2 .item-3" aria-expanded="false" aria-controls="kpi-2 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"></path>
+                                                        </svg>Maçãs - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#kpi-2">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="accordion" role="tablist" id="kpi-4">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-4 .item-1" aria-expanded="false" aria-controls="kpi-4 .item-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"></path>
+                                                        </svg>Salty Kpi - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#kpi-4">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-4 .item-2" aria-expanded="false" aria-controls="kpi-4 .item-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M352 176C369.7 176 384 190.3 384 208C384 225.7 369.7 240 352 240H320V448H368C421 448 464 405 464 352V345.9L456.1 352.1C447.6 362.3 432.4 362.3 423 352.1C413.7 343.6 413.7 328.4 423 319L479 263C488.4 253.7 503.6 253.7 512.1 263L568.1 319C578.3 328.4 578.3 343.6 568.1 352.1C559.6 362.3 544.4 362.3 535 352.1L528 345.9V352C528 440.4 456.4 512 368 512H208C119.6 512 48 440.4 48 352V345.9L40.97 352.1C31.6 362.3 16.4 362.3 7.029 352.1C-2.343 343.6-2.343 328.4 7.029 319L63.03 263C72.4 253.7 87.6 253.7 96.97 263L152.1 319C162.3 328.4 162.3 343.6 152.1 352.1C143.6 362.3 128.4 362.3 119 352.1L112 345.9V352C112 405 154.1 448 208 448H256V240H224C206.3 240 192 225.7 192 208C192 190.3 206.3 176 224 176H234.9C209 158.8 192 129.4 192 96C192 42.98 234.1 0 288 0C341 0 384 42.98 384 96C384 129.4 366.1 158.8 341.1 176H352zM288 128C305.7 128 320 113.7 320 96C320 78.33 305.7 64 288 64C270.3 64 256 78.33 256 96C256 113.7 270.3 128 288 128z"></path>
+                                                        </svg>Frangos Fritos - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#kpi-4">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-4 .item-3" aria-expanded="false" aria-controls="kpi-4 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"></path>
+                                                        </svg>Maçãs - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#kpi-4">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-3">
-                    <p>Content for tab 3.</p>
+                <div class="tab-pane active" role="tabpanel" id="tab-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container py-4 py-xl-5">
+                                <div class="row mb-5">
+                                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                                        <h2>Modelo Acompanhamento Mensal</h2>
+                                        <p class="w-lg-50">25% do Salário Fixo<br></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="accordion" role="tablist" id="kpi-3">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-3 .item-1" aria-expanded="false" aria-controls="kpi-3 .item-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M505.2 324.8l-47.73-68.78l47.75-68.81c7.359-10.62 8.797-24.12 3.844-36.06c-4.969-11.94-15.52-20.44-28.22-22.72l-82.39-14.88l-14.89-82.41c-2.281-12.72-10.76-23.25-22.69-28.22c-11.97-4.936-25.42-3.498-36.12 3.844L256 54.49L187.2 6.709C176.5-.6016 163.1-2.039 151.1 2.896c-11.92 4.971-20.4 15.5-22.7 28.19l-14.89 82.44L31.15 128.4C18.42 130.7 7.854 139.2 2.9 151.2C-2.051 163.1-.5996 176.6 6.775 187.2l47.73 68.78l-47.75 68.81c-7.359 10.62-8.795 24.12-3.844 36.06c4.969 11.94 15.52 20.44 28.22 22.72l82.39 14.88l14.89 82.41c2.297 12.72 10.78 23.25 22.7 28.22c11.95 4.906 25.44 3.531 36.09-3.844L256 457.5l68.83 47.78C331.3 509.7 338.8 512 346.3 512c4.906 0 9.859-.9687 14.56-2.906c11.92-4.969 20.4-15.5 22.7-28.19l14.89-82.44l82.37-14.88c12.73-2.281 23.3-10.78 28.25-22.75C514.1 348.9 512.6 335.4 505.2 324.8zM456.8 339.2l-99.61 18l-18 99.63L256 399.1L172.8 456.8l-18-99.63l-99.61-18L112.9 255.1L55.23 172.8l99.61-18l18-99.63L256 112.9l83.15-57.75l18.02 99.66l99.61 18L399.1 255.1L456.8 339.2zM256 143.1c-61.85 0-111.1 50.14-111.1 111.1c0 61.85 50.15 111.1 111.1 111.1s111.1-50.14 111.1-111.1C367.1 194.1 317.8 143.1 256 143.1zM256 319.1c-35.28 0-63.99-28.71-63.99-63.99S220.7 192 256 192s63.99 28.71 63.99 63.1S291.3 319.1 256 319.1z"></path>
+                                                        </svg>Salty Kpi - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#kpi-3">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-3 .item-2" aria-expanded="false" aria-controls="kpi-3 .item-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M352 176C369.7 176 384 190.3 384 208C384 225.7 369.7 240 352 240H320V448H368C421 448 464 405 464 352V345.9L456.1 352.1C447.6 362.3 432.4 362.3 423 352.1C413.7 343.6 413.7 328.4 423 319L479 263C488.4 253.7 503.6 253.7 512.1 263L568.1 319C578.3 328.4 578.3 343.6 568.1 352.1C559.6 362.3 544.4 362.3 535 352.1L528 345.9V352C528 440.4 456.4 512 368 512H208C119.6 512 48 440.4 48 352V345.9L40.97 352.1C31.6 362.3 16.4 362.3 7.029 352.1C-2.343 343.6-2.343 328.4 7.029 319L63.03 263C72.4 253.7 87.6 253.7 96.97 263L152.1 319C162.3 328.4 162.3 343.6 152.1 352.1C143.6 362.3 128.4 362.3 119 352.1L112 345.9V352C112 405 154.1 448 208 448H256V240H224C206.3 240 192 225.7 192 208C192 190.3 206.3 176 224 176H234.9C209 158.8 192 129.4 192 96C192 42.98 234.1 0 288 0C341 0 384 42.98 384 96C384 129.4 366.1 158.8 341.1 176H352zM288 128C305.7 128 320 113.7 320 96C320 78.33 305.7 64 288 64C270.3 64 256 78.33 256 96C256 113.7 270.3 128 288 128z"></path>
+                                                        </svg>Frangos Fritos - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#kpi-3">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kpi-3 .item-3" aria-expanded="false" aria-controls="kpi-3 .item-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4 me-2">
+                                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                            <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"></path>
+                                                        </svg>Maçãs - Receita NF</button></h2>
+                                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#kpi-3">
+                                                    <div class="accordion-body">
+                                                        <div class="table-responsive mb-0">
+                                                            <table class="table">
+                                                                <thead class="border rounded-0">
+                                                                    <tr>
+                                                                        <th>faixas performance</th>
+                                                                        <th class="text-center">%</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="border rounded-0">
+                                                                    <tr>
+                                                                        <td>0% ~ 95%</td>
+                                                                        <td class="text-end">0%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>95% ~</td>
+                                                                        <td class="text-end">100%</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
